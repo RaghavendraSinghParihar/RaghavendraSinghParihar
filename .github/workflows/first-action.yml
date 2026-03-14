@@ -33,12 +33,14 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         env:
-          TEMP_VAR: test
+          GRADLE_VERSION: 8.2
+          BUILD_VARIANT: release
         run: |
           echo "App Name: $APP_NAME"
           echo "Version: $VERSION"
           echo "Author: $AUTHOR".
-          echo "TEMP_VAR: $TEMP_VAR".
+          echo "GRADLE_VERSION: $GRADLE_VERSION".
+          echo "BUILD_VARIANT: $BUILD_VARIANT".
           echo "Application is ${{ env.APP_NAME }}"
         
 
@@ -50,7 +52,8 @@ jobs:
           echo "App Name: $APP_NAME"
           echo "Version: $VERSION"
           echo "Author: $AUTHOR".
-          echo "TEMP_VAR: $TEMP_VAR".
+          echo "GRADLE_VERSION: $GRADLE_VERSION".
+          echo "BUILD_VARIANT: $BUILD_VARIANT".
           echo "Application is ${{ env.APP_NAME }}"
 
       
