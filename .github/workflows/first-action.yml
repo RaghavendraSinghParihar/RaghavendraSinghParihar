@@ -22,6 +22,15 @@ on:
         description: "Enter your username"
         required: true
         default: "guest"
+ inputs:
+      environment:
+        description: "Select environment"
+        required: true
+        type: choice
+        options:
+          - dev
+          - staging
+          - production
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
