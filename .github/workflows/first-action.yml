@@ -22,7 +22,6 @@ on:
         description: "Enter your username"
         required: true
         default: "guest"
- inputs:
       environment:
         description: "Select environment"
         required: true
