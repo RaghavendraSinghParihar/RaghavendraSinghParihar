@@ -32,10 +32,13 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
+        env:
+          TEMP_VAR: test
         run: |
           echo "App Name: $APP_NAME"
           echo "Version: $VERSION"
           echo "Author: $AUTHOR".
+          echo "TEMP_VAR: $TEMP_VAR".
         
         
 
