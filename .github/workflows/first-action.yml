@@ -39,7 +39,7 @@ jobs:
           echo "Version: $VERSION"
           echo "Author: $AUTHOR".
           echo "TEMP_VAR: $TEMP_VAR".
-        
+          echo "Application is ${{ env.APP_NAME }}"
         
 
       # Runs a set of commands using the runners shell
@@ -51,5 +51,6 @@ jobs:
           echo "Version: $VERSION"
           echo "Author: $AUTHOR".
           echo "TEMP_VAR: $TEMP_VAR".
+          echo "Application is ${{ env.APP_NAME }}"
 
       
