@@ -48,3 +48,8 @@ jobs:
           echo "App Name: $APP_NAME"
           echo "Version: $VERSION"
           echo "Author: $AUTHOR".
+
+       # How to show Temp Variables
+      - name: Example temp var Show
+        env: TEMP_VAR: test
+        run: echo "$TEMP_VAR"
