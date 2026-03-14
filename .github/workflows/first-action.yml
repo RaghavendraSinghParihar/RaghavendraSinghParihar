@@ -45,6 +45,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo "App Name: $APP_NAME
+          echo "App Name: $APP_NAME"
           echo "Version: $VERSION"
           echo "Author: $AUTHOR".
