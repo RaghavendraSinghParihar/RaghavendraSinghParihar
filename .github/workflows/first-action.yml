@@ -48,7 +48,7 @@ jobs:
           echo "GRADLE_VERSION: $GRADLE_VERSION".
           echo "BUILD_VARIANT: $BUILD_VARIANT".
           echo "Application is ${{ env.APP_NAME }}"
-          echo "User Name is ${{ username }}"
+         run: echo "Hello ${{ github.event.inputs.username }}"
         
 
       # Runs a set of commands using the runners shell
