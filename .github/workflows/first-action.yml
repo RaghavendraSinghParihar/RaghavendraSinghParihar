@@ -50,5 +50,6 @@ jobs:
           echo "App Name: $APP_NAME"
           echo "Version: $VERSION"
           echo "Author: $AUTHOR".
+          echo "TEMP_VAR: $TEMP_VAR".
 
       
