@@ -2,7 +2,6 @@
 
 name: CI My First Github Actions
 env:
-  env:
   APP_NAME: MyAndroidApp
   VERSION: 1.0
   AUTHOR: Raghavendra
@@ -51,5 +50,26 @@ jobs:
 
        # How to show Temp Variables
       - name: Example temp var Show
-        env: TEMP_VAR: "test"
-        run: echo "$TEMP_VAR"
+       env:
+        TEMP_VAR: ABC
+        TEMP_VAR1: 2.0
+        TEMP_VAR2: XYZ
+        TEMP_VAR3: "test"
+        run: |
+         echo "TEMP_VAR $TEMP_VAR"
+         echo "TEMP_VAR1 : $APP_NAME"
+         echo "TEMP_VAR2: $VERSION"
+         echo "TEMP_VAR3 : $AUTHOR".
+
+ # Will not sho in another Job to show Temp Variables
+      - name: Will not sho in another Job
+       env:
+        TEMP_VAR: ABC
+        TEMP_VAR1: 2.0
+        TEMP_VAR2: XYZ
+        TEMP_VAR3: "test"
+        run: |
+         echo "TEMP_VAR $TEMP_VAR"
+         echo "TEMP_VAR1 : $APP_NAME"
+         echo "TEMP_VAR2: $VERSION"
+         echo "TEMP_VAR3 : $AUTHOR".
